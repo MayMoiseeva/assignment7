@@ -1,0 +1,65 @@
+@keyframes color-change {
+	0% {background:linear-gradient(to right, red, orange, yellow, green, cyan, blue, darkorchid);}
+	14% {background:linear-gradient(to right, darkorchid, red, orange, yellow, green, cyan, blue);}
+	28% {background:linear-gradient(to right, blue, darkorchid, red, orange, yellow, green, cyan);}
+	43% {background:linear-gradient(to right, cyan, blue, darkorchid, red, orange, yellow, green);}
+	57%{background:linear-gradient(to right, green, cyan, blue, darkorchid, red, orange, yellow);}
+	72%{background:linear-gradient(to right, yellow, green, cyan, blue, darkorchid, red, orange)}
+	86%{background:linear-gradient(to right, orange, yellow, green, cyan, blue, darkorchid, red);}
+	100%{background:linear-gradient(to right, red, orange, yellow, green, cyan, blue, darkorchid);}
+}
+
+body{
+	background:hsl(0,0%,90%);
+}
+
+.flex-box{
+	display:flex;
+	background-color: black;
+	flex-direction:row;
+	justify-content: center;
+	color:white;
+	padding:10px;
+}
+
+div > div{
+	margin:auto;
+	padding:auto;
+	width:200px;
+	font-size:20px;
+}
+
+.gay{
+	width:200px;
+	color:black;
+	margin:auto;
+	font-size:30px;
+	text-align:center;
+	padding:auto;
+	background:linear-gradient(to right, red, orange, yellow, green, cyan, blue, darkorchid);
+	animation-name: color-change;
+	animation-duration:1s;
+	animation-iteration-count: infinite;
+}
+
+.transition{
+	position:relative;
+	top:120px;
+	width:200px;
+	height:150px;
+	margin:auto;
+	color:white;
+	background:black;
+	padding:5px;
+	filter:brightness(90%);
+	transition: all 1s;
+	justify-content:center;
+}
+
+.transition:hover{
+	background: url(../images/crow.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	transform: scale(2);
+	color:rgba(0,0,0,0);
+}
